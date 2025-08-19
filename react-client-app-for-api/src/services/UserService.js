@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const registerUser = async (user) => {
-  return await axios.post('https://humble-orbit-x54467p475652r65-5144.app.github.dev/api/User/Register', user);
+  return await axios.post('https://humble-orbit-x54467p475652r65-5144.app.github.dev/User/Register', user);
 };
 
 export const loginUser = async (email, password) => {
@@ -11,11 +11,11 @@ export const loginUser = async (email, password) => {
 };
 
 export const getallProfile = async () => {
-  const response = await axios.get('https://humble-orbit-x54467p475652r65-5144.app.github.dev/api/User/Profile');
+  const response = await axios.get('https://humble-orbit-x54467p475652r65-5144.app.github.dev/User/Profile');
   return response.data;
 };
 export const getadminProfile = async () => {
-  const response = await axios.get('https://humble-orbit-x54467p475652r65-5144.app.github.dev/api/Admin/Profile');
+  const response = await axios.get('https://humble-orbit-x54467p475652r65-5144.app.github.dev/Admin/Profile');
   return response.data;
 };
 
