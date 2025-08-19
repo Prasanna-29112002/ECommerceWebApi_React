@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AuthService from './AuthService';
 
-const API_URL = 'http://localhost:5144/Category';
+const API_URL = 'https://humble-orbit-x54467p475652r65-5144.app.github.dev/api/Category';
 
 class CategoryService {
   getHeaders() {
